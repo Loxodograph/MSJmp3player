@@ -124,7 +124,7 @@ const playSong = (id) => {
 
 const changeImage =(id) =>{
   if (id >= 8){
-    image.setAttribute("src", "./MP3-PLAYER/Lavender.png")
+    image.setAttribute("src", "./MP3-PLAYER/Lavender.jpg")
 } else {
     image.setAttribute("src", "./MP3-PLAYER/DamLife.jpg")
 }

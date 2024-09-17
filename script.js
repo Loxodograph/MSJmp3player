@@ -114,12 +114,12 @@ const playSong = (id) => {
   playButton.classList.add("playing");
 
 
-
+  changeImage(userData?.currentSong.id)
   highlightCurrentSong();
   setPlayerDisplay();
   setPlayButtonAccessibleText();
   audio.play();
-  changeImage(userData?.currentSong.id)
+  
 };
 
 const changeImage =(id) =>{

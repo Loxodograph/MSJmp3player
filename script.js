@@ -81,14 +81,14 @@ const allSongs = [
     title: "More War",
     artist: "MSJ",
     duration: "2:13",
-    src: "./MP3-Player/MORE WAR.mp3",
+    src: "./MP3-PLAYER/MORE WAR.mp3",
   },
   {
     id: 11,
     title: "Lughead",
     artist: "MSJ",
     duration: "7:27",
-    src: "./MP3-Player/LUGHEAD.mp3",
+    src: "./MP3-PLAYER/LUGHEAD.mp3",
   }
 ];
 
@@ -124,9 +124,9 @@ const playSong = (id) => {
 
 const changeImage =(id) =>{
   if (id >= 8){
-    image.setAttribute("src", "./MP3-Player/Lavender.png")
+    image.setAttribute("src", "./MP3-PLAYER/Lavender.png")
 } else {
-    image.setAttribute("src", "./MP3-Player/DamLife.jpg")
+    image.setAttribute("src", "./MP3-PLAYER/DamLife.jpg")
 }
 }
 

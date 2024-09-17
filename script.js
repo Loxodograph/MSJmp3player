@@ -11,7 +11,7 @@ const allSongs = [
     title: "Shellshock",
     artist: "MSJ",
     duration: "2:34",
-    src: "./MP3-PLAYER/shellshock.mp3",
+    src: "./MP3-PLAYER/Shellshock.mp3",
   },
   {
     id: 1,

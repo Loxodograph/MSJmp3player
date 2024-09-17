@@ -1,11 +1,11 @@
 :root {
   /* colors */
-  --primary-color: #dfdfe2;
-  --secondary-color: #ffffff;
-  --app-background-color: #4d4d62;
-  --background-color: #1b1b32;
+  --primary-color: #829CBC;
+  --secondary-color: #829CBC;
+  --app-background-color: #000000;
+  --background-color: #000000;
   --foreground-color: #3b3b4f;
-  --highlight-color: #f1be32;
+  --highlight-color: #417B3C;
 
   /* font sizes */
   --root-font-size: 16px;
@@ -96,6 +96,8 @@ ul {
   color: var(--secondary-color);
   margin: 0 10px;
   font-family: var(--font-headline);
+  width: fit-content;
+  font-size: 12px;
 }
 
 .player-content {
@@ -366,4 +368,5 @@ button:focus,
     justify-content: space-between;
     text-align: center;
   }
+  
 }

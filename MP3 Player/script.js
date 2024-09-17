@@ -8,74 +8,88 @@ const shuffleButton = document.getElementById("shuffle");
 const allSongs = [
   {
     id: 0,
-    title: "Scratching The Surface",
-    artist: "Quincy Larson",
-    duration: "4:25",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/scratching-the-surface.mp3",
+    title: "Shellshock",
+    artist: "MSJ",
+    duration: "2:34",
+    src: "./shellshock.mp3",
   },
   {
     id: 1,
-    title: "Can't Stay Down",
-    artist: "Quincy Larson",
-    duration: "4:15",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3",
+    title: "2k",
+    artist: "MSJ",
+    duration: "3:36",
+    src: "./2k.mp3",
   },
   {
     id: 2,
-    title: "Still Learning",
-    artist: "Quincy Larson",
-    duration: "3:51",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/still-learning.mp3",
+    title: "Colossal",
+    artist: "MSJ",
+    duration: "3:01",
+    src: "./colossal.mp3",
   },
   {
     id: 3,
-    title: "Cruising for a Musing",
-    artist: "Quincy Larson",
-    duration: "3:34",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/cruising-for-a-musing.mp3",
+    title: "Hell In A Cell",
+    artist: "MSJ",
+    duration: "1:55",
+    src: "./hell In A Cell.mp3",
   },
   {
     id: 4,
-    title: "Never Not Favored",
-    artist: "Quincy Larson",
-    duration: "3:35",
+    title: "Call Me",
+    artist: "MSJ",
+    duration: "3:56",
     src: "https://cdn.freecodecamp.org/curriculum/js-music-player/never-not-favored.mp3",
   },
   {
     id: 5,
-    title: "From the Ground Up",
-    artist: "Quincy Larson",
-    duration: "3:12",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/from-the-ground-up.mp3",
+    title: "Slack",
+    artist: "MSJ",
+    duration: "2:54",
+    src: "./Slack.mp3",
   },
   {
     id: 6,
-    title: "Walking on Air",
-    artist: "Quincy Larson",
-    duration: "3:25",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/walking-on-air.mp3",
+    title: "Oliver B",
+    artist: "MSJ",
+    duration: "5:30",
+    src: "./Oliver B.mp3",
   },
   {
     id: 7,
-    title: "Can't Stop Me. Can't Even Slow Me Down.",
-    artist: "Quincy Larson",
-    duration: "3:52",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/cant-stop-me-cant-even-slow-me-down.mp3",
+    title: "Tenderoni",
+    artist: "MSJ",
+    duration: "3:04",
+    src: "./tenderoni.mp3",
   },
   {
     id: 8,
-    title: "The Surest Way Out is Through",
-    artist: "Quincy Larson",
-    duration: "3:10",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/the-surest-way-out-is-through.mp3",
+    title: "Migraine",
+    artist: "MSJ",
+    duration: "2:53",
+    src: "./MIGRAINE.mp3",
   },
   {
     id: 9,
-    title: "Chasing That Feeling",
-    artist: "Quincy Larson",
-    duration: "2:43",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/chasing-that-feeling.mp3",
+    title: "Tremboi",
+    artist: "MSJ",
+    duration: "3:29",
+    src: "./TREMBOI.mp3",
   },
+  {
+    id: 10,
+    title: "More War",
+    artist: "MSJ",
+    duration: "2:13",
+    src: "./MORE WAR.mp3",
+  },
+  {
+    id: 11,
+    title: "Lughead",
+    artist: "MSJ",
+    duration: "7:27",
+    src: "./LUGHEAD.mp3",
+  }
 ];
 
 const audio = new Audio();
@@ -89,6 +103,7 @@ const playSong = (id) => {
   const song = userData?.songs.find((song) => song.id === id);
   audio.src = song.src;
   audio.title = song.title;
+ 
 
   if (userData?.currentSong === null || userData?.currentSong.id !== song.id) {
     audio.currentTime = 0;
@@ -98,11 +113,22 @@ const playSong = (id) => {
   userData.currentSong = song;
   playButton.classList.add("playing");
 
+
+
   highlightCurrentSong();
   setPlayerDisplay();
   setPlayButtonAccessibleText();
   audio.play();
+  changeImage(userData?.currentSong.id)
 };
+
+const changeImage =(id) =>{
+  if (id >= 8){
+    image.setAttribute("src", "./lavender.png")
+} else {
+  image.setAttribute("src", "./damlife.jpg")
+}
+}
 
 const pauseSong = () => {
   userData.songCurrentTime = audio.currentTime;

@@ -11,84 +11,84 @@ const allSongs = [
     title: "Shellshock",
     artist: "MSJ",
     duration: "2:34",
-    src: "./MP3-PLAYER/Shellshock.mp3",
+    src: "./mp3player/Shellshock.mp3",
   },
   {
     id: 1,
     title: "2k",
     artist: "MSJ",
     duration: "3:36",
-    src: "./MP3-PLAYER/2k.mp3",
+    src: "./mp3player/2k.mp3",
   },
   {
     id: 2,
     title: "Colossal",
     artist: "MSJ",
     duration: "3:01",
-    src: "./MP3-PLAYER/colossal.mp3",
+    src: "./mp3player/colossal.mp3",
   },
   {
     id: 3,
     title: "Hell In A Cell",
     artist: "MSJ",
     duration: "1:55",
-    src: "./MP3-PLAYER/hell In A Cell.mp3",
+    src: "./mp3player/hell In A Cell.mp3",
   },
   {
     id: 4,
     title: "Call Me",
     artist: "MSJ",
     duration: "3:56",
-    src: "./MP3-PLAYER/Call Me.mp3",
+    src: "./mp3player/Call Me.mp3",
   },
   {
     id: 5,
     title: "Slack",
     artist: "MSJ",
     duration: "2:54",
-    src: "./MP3-PLAYER/Slack.mp3",
+    src: "./mp3player/Slack.mp3",
   },
   {
     id: 6,
     title: "Oliver B",
     artist: "MSJ",
     duration: "5:30",
-    src: "./MP3-PLAYER/Oliver B.mp3",
+    src: "./mp3player/Oliver B.mp3",
   },
   {
     id: 7,
     title: "Tenderoni",
     artist: "MSJ",
     duration: "3:04",
-    src: "./MP3-PLAYER/tenderoni.mp3",
+    src: "./mp3player/tenderoni.mp3",
   },
   {
     id: 8,
     title: "Migraine",
     artist: "MSJ",
     duration: "2:53",
-    src: "./MP3-PLAYER/MIGRAINE.mp3",
+    src: "./mp3player/MIGRAINE.mp3",
   },
   {
     id: 9,
     title: "Tremboi",
     artist: "MSJ",
     duration: "3:29",
-    src: "./MP3-PLAYER/TREMBOI.mp3",
+    src: "./mp3player/TREMBOI.mp3",
   },
   {
     id: 10,
     title: "More War",
     artist: "MSJ",
     duration: "2:13",
-    src: "./MP3-PLAYER/MORE WAR.mp3",
+    src: "./mp3player/MORE WAR.mp3",
   },
   {
     id: 11,
     title: "Lughead",
     artist: "MSJ",
     duration: "7:27",
-    src: "./MP3-PLAYER/LUGHEAD.mp3",
+    src: "./mp3player/LUGHEAD.mp3",
   }
 ];
 
@@ -124,9 +124,9 @@ const playSong = (id) => {
 
 const changeImage =(id) =>{
   if (id >= 8){
-    image.setAttribute("src", "./MP3-PLAYER/Lavender.jpg")
+    image.setAttribute("src", "./mp3player/Lavender.jpg")
 } else {
-    image.setAttribute("src", "./MP3-PLAYER/DamLife.jpg")
+    image.setAttribute("src", "./mp3player/DamLife.jpg")
 }
 }
 

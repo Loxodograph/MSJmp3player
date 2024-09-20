@@ -32,7 +32,7 @@ const allSongs = [
     title: "Hell In A Cell",
     artist: "MSJ",
     duration: "1:55",
-    src: "./mp3player/hell In A Cell.mp3",
+    src: "./mp3player/Hell In A Cell.mp3",
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ const allSongs = [
     title: "Tenderoni",
     artist: "MSJ",
     duration: "3:04",
-    src: "./mp3player/tenderoni.mp3",
+    src: "./mp3player/Tenderoni.mp3",
   },
   {
     id: 8,

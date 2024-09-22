@@ -25,7 +25,7 @@ const allSongs = [
     title: "Colossal",
     artist: "MSJ",
     duration: "3:01",
-    src: "./mp3player/colossal.mp3",
+    src: "./mp3player/Colossal.mp3",
   },
   {
     id: 3,
